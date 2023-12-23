@@ -1,16 +1,26 @@
 .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .center-cell {
-    text-align: center;
-  }
-  .odd-row {
-    background-color: #dddddd;
-  }
-  
-  .even-row {
-    background-color: #ffffff;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 50px;
+
+}
+
+th,
+td {
+  width: 250px;
+  height: 60px;
+}
+
+.center-cell {
+  text-align: center;
+}
+
+.odd-row {
+  background-color: #dddddd;
+}
+
+.even-row {
+  background-color: #ffffff;
+}
