@@ -1,0 +1,14 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(182, 182, 182);
+    padding: 20px;
+}
+.links-container{
+    display: flex;
+    gap: 20px;
+}
+a{
+    all:unset;
+}

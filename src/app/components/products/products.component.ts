@@ -2,32 +2,32 @@ import { Component, OnInit } from '@angular/core';
 import { ProductInterface } from '../../interfaces/product-interface';
 import { ProductsService } from '../../services/products.service';
 import { CommonModule } from '@angular/common';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NzTableModule],
   templateUrl: './products.component.html',
-  styleUrl: './products.component.sass'
+  styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent {
-  public  products: Array<ProductInterface> = [];
+export class ProductsComponent implements OnInit {
+  public products: Array<ProductInterface> = [];
   
-    constructor(private productService: ProductsService) {}
+  constructor(private productService: ProductsService) {}
    
-    ngOnInit(): void {
-      this.getProducts();
-    }
+  ngOnInit(): void {
+    this.getProducts();
+  }
   
-   getProducts() {
-      this.productService.getProducts().subscribe({
-        next: (data) => {
-          this.products = data;
-        },
-        error: (error) => {
-          console.error('Error fetching characters:', error);
-        }
-      });
-    }
-  
+  getProducts() {
+    this.productService.getProducts().subscribe({
+      next: (data) => {
+        this.products = data;
+      },
+      error: (error) => {
+        console.error('Error fetching products:', error);
+      }
+    });
+  }
 }
