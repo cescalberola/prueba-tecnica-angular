@@ -1,21 +1,18 @@
 <div class="table-container">
-  <nz-table #dataTable [nzData]="products" [nzPageSize]="10">
+  <nz-table #sortTable [nzData]="products" [nzPageSize]="10">
     <thead>
       <tr>
-        <th nzWidth="250px">Title</th>
-        <th nzWidth="250px">Category</th>
-        <th nzWidth="250px">Price</th>
+        <th nzShowSort nzSortKey="title" (nzSortOrderChange)="sortTitle($event)">Title</th>
+        <th nzShowSort nzSortKey="category" (nzSortOrderChange)="sortCategory($event)">Category</th>
+        <th nzShowSort nzSortKey="price" (nzSortOrderChange)="sortPrice($event)">Price</th>
       </tr>
     </thead>
     <tbody>
-      <ng-container *ngFor="let product of dataTable.data; let i = index">
-        <tr [class.odd-row]="i % 2 === 0" [class.even-row]="i % 2 !== 0">
-          <td class="center-cell">{{ product.title }}</td>
-          <td class="center-cell">{{ product.category }}</td>
-          <td class="center-cell">{{ product.price }}</td>
-        </tr>
-      </ng-container>
+      <tr *ngFor="let product of sortTable.data; let i = index" [class.odd-row]="i % 2 === 0" [class.even-row]="i % 2 !== 0">
+        <td class="center-cell">{{ product.title }}</td>
+        <td class="center-cell">{{ product.category }}</td>
+        <td class="center-cell">{{ product.price }}</td>
+      </tr>
     </tbody>
   </nz-table>
-  
 </div>
