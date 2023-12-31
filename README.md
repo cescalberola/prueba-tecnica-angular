@@ -30,3 +30,12 @@ It's important to note that, for this version, the design quality will not be ev
 <p align="center">
   <img src="src/assets/gif-prueba-tecnica.gif" width="900">
 </p>
+
+<p align="center">
+  <!--ANGULAR-->
+  <img src="https://imgs.search.brave.com/DnlczUTMULcHpqMcweYkVGhbcPeHMTq-Qpu6a_xhY6c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbi1pY29ucy5j/b20vaWNvbnMyLzI2/OTkvUE5HLzUxMi9h/bmd1bGFyX2xvZ29f/aWNvbl8xNjk1OTUu/cG5n" width="60">
+  <!--TYPESCRIPT-->
+  <img src="https://imgs.search.brave.com/sXYprDxK8_0Up5vaW62rpLfRGZ5J1rxgZsxrNEMqUes/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzRjL1R5cGVzY3Jp/cHRfbG9nb18yMDIw/LnN2Zw.svg" width="60">
+<!--ANTDESIGN-->
+  <img src="https://imgs.search.brave.com/0On1oCveocTdLccAaR4RAjEWnlrfCai3kQg3nW997CE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0EvYW50LWRl/c2lnbi1sb2dvLUVB/QjZCM0Q1RDktc2Vl/a2xvZ28uY29tLnBu/Zw" width="60">
+</p>
