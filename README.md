@@ -1,27 +1,32 @@
-# PruebaTecnicaAngular
+# Technical Test - E-commerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+This project is part of a technical test for The Bridge's IT department, aimed at developing an MVP for an e-commerce website using Angular.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The main goal of this initial version is to implement a web interface that connects to an API provided by The Bridge's backend team. The API is hosted at https://fakestoreapi.com and offers the necessary endpoints to retrieve product information.
 
-## Code scaffolding
+## Stakeholder Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For this initial version of the MVP, the stakeholder has requested the following:
 
-## Build
+- Display a table on the web interface.
+- The table should contain the following columns:
+  - Title
+  - Category
+  - Price
+- Enable sorting on all columns.
+- Implement pagination for the list of products.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+It's important to note that, for this version, the design quality will not be evaluated due to the absence of the designer, who is currently on vacation.
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular: Framework used for front-end development.
+- API: We will utilize the API provided by https://fakestoreapi.com/.
 
-## Running end-to-end tests
+## Preview
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+  <img src="src/assets/gif-prueba-tecnica.gif" width="900">
+</p>
